@@ -17,7 +17,17 @@ class MyLinkedList {
     }
     
     public void addAtHead(int val) {
+        Node node = new Node ();
+        node.val = val;
         
+        if (this.size == 0){
+            this.head = this.tail = node;
+        }else{
+            node.next = this.head;
+            this.head.prev=node;
+            this.head = node;   
+        }
+        this.size++;
     }
     
     public void addAtTail(int val) {
