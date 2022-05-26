@@ -1,5 +1,12 @@
 // https://leetcode.com/problems/design-linked-list/
 class MyLinkedList {
+    public static class Node {
+        int val;
+        Node next;
+        Node prev;  
+    }
+    Node head , tail;
+    int size;
 
     public MyLinkedList() {
         
