@@ -20,3 +20,14 @@
             
             while(curr.next!= null && curr.val == curr.next.val){
                   curr = curr.next;
+            } 
+            if (prev.next==curr){
+                // include in answer
+                prev=prev.next;
+            }else{
+                // skip
+                prev.next=curr.next;
+            }
+            curr=curr.next;
+        }
+        
