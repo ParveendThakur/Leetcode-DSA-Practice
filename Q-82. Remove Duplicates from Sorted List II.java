@@ -15,3 +15,8 @@
         dummy.next = head;
         ListNode prev = dummy;
         ListNode curr = head;
+        
+        while(curr != null){
+            
+            while(curr.next!= null && curr.val == curr.next.val){
+                  curr = curr.next;
